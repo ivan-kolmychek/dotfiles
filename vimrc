@@ -37,6 +37,9 @@ Plugin 'tpope/vim-rake'
 " slim templating engine
 Plugin 'slim-template/vim-slim' 
 
+" api blueprint
+Plugin 'kylef/apiblueprint.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -76,3 +79,4 @@ set tabstop=2       " The width of a TAB is set to N.
 set shiftwidth=2    " Indents will have a width of N
 set softtabstop=2   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
+set copyindent
