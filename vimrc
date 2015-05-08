@@ -50,6 +50,8 @@ filetype plugin indent on    " required
 " https://github.com/bling/vim-airline/wiki/FAQ#vim-airline-doesnt-appear-until-i-create-a-new-split
 set laststatus=2
 
+set wildignore+=*/vendor/bundle/*
+
 " 256-colors
 set t_Co=256
 
