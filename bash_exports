@@ -4,3 +4,7 @@ export EDITOR=/usr/bin/vim
 export SSH_ASKPASS=/usr/bin/ksshaskpass
 export BROWSER=/usr/bin/firefox
 export HISTCONTROL='ignoreboth'
+export GIT_PS1_SHOWDIRTYSTATE=1
+
+source '/usr/share/git/completion/git-prompt.sh'
+PS1='[\u] \w$(__git_ps1 " (%s)") $ '
