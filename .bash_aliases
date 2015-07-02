@@ -2,7 +2,7 @@
 
 alias rails='bundle exec rails'
 alias rake='bundle exec rake'
-alias rspec='bundle exec rspec'
+alias rspec='bundle exec rspec && notify-send "spec passed" || notify-send "spec failed"'
 alias ls='ls --color=auto'
 alias rackup='bundle exec rackup'
 alias unicorn='bundle exec dotenv unicorn -c config/unicorn.rb'
