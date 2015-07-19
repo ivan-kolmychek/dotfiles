@@ -16,7 +16,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'Bling/vim-airline'
 
 " git wrapper
-Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-fugitive'
 
 " file navigation
 Plugin 'kien/ctrlp.vim'
