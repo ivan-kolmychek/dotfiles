@@ -1,0 +1,18 @@
+[user]
+	name = Ivan Kolmychek
+  email = ivan.kolmychek@gmail.com
+
+[core]
+	autocrlf = input
+	safecrlf = warn
+	editor = vim
+	excludesfile = ~/.gitignore
+
+[alias]
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  root = !pwd
+  wip = commit -m "wip"
+  fixup = commit -m "fixup"
+
+[push]
+	default = simple

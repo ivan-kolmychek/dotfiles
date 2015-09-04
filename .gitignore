@@ -1,0 +1,11 @@
+# kate swap files
+*.kate-swp
+
+# vim swap files
+*.swp
+
+# git original files, left after merge
+*.orig
+
+# bundler files
+vendor/bundle/
