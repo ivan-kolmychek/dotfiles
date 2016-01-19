@@ -13,4 +13,6 @@ alias sidekiq='rbenv exec bundle exec sidekiq -C config/sidekiq.yml'
 alias puma='rbenv exec bundle exec dotenv puma -C config/puma.rb'
 alias pry='rbenv exec bundle exec pry -r ./config/environment.rb'
 alias jekyll='rbenv exec bundle exec jekyll'
-
+alias mix='exenv exec mix'
+alias iex='exenv exec iex'
+alias docker-compose-run='docker-compose run --rm'
