@@ -40,6 +40,9 @@ Plugin 'slim-template/vim-slim'
 " api blueprint
 Plugin 'kylef/apiblueprint.vim'
 
+" elixir
+Plugin 'elixir-lang/vim-elixir'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
