@@ -16,4 +16,7 @@
   fixup = commit -m "fixup"
 
 [push]
-	default = simple
+  default = simple
+
+[init]
+  templatedir = ~/.git_template
