@@ -81,7 +81,7 @@ syntax on
 let g:ctrlp_working_path_mode = 'ra'
 
 " map CtrlP clear cache
-map <c-]> :CtrlPClearCache <CR>
+map <c-I> :CtrlPClearCache <CR>
 
 " identation and tabs handling
 " based on http://stackoverflow.com/a/1878984
