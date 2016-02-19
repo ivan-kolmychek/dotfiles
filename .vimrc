@@ -30,6 +30,9 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'spacehi.vim'
 Plugin 'cream-showinvisibles'
 
+" rbenv
+Plugin 'tpope/vim-rbenv' 
+
 " rails
 Plugin 'tpope/vim-rails'
 
