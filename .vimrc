@@ -16,7 +16,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'Bling/vim-airline'
 
 " git wrapper
-" Plugin 'tpope/vim-fugitive'
+" it also configures vim to look for ctags in .git/tags
+Plugin 'tpope/vim-fugitive'
 
 " file navigation
 Plugin 'kien/ctrlp.vim'
