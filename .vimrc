@@ -26,6 +26,10 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'chriskempson/base16-vim'
 
+" highlight hidden symbols
+Plugin 'spacehi.vim'
+Plugin 'cream-showinvisibles'
+
 " rails
 Plugin 'tpope/vim-rails'
 
