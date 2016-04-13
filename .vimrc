@@ -80,6 +80,9 @@ syntax on
 
 let g:ctrlp_working_path_mode = 'ra'
 
+let g:airline_section_b = ""
+let g:airline_section_y = ""
+
 " map CtrlP clear cache
 map <c-I> :CtrlPClearCache <CR>
 
