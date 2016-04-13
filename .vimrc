@@ -31,7 +31,7 @@ Plugin 'spacehi.vim'
 Plugin 'cream-showinvisibles'
 
 " rbenv
-Plugin 'tpope/vim-rbenv' 
+Plugin 'tpope/vim-rbenv'
 
 " rails
 Plugin 'tpope/vim-rails'
@@ -43,7 +43,7 @@ Plugin 'tpope/vim-Bundler'
 Plugin 'tpope/vim-rake'
 
 " slim templating engine
-Plugin 'slim-template/vim-slim' 
+Plugin 'slim-template/vim-slim'
 
 " api blueprint
 Plugin 'kylef/apiblueprint.vim'
@@ -57,8 +57,8 @@ filetype plugin indent on    " required
 
 " Put your non-Plugin stuff after this line
 
-" for statusbar to appear 
-" https://github.com/bling/vim-airline/wiki/FAQ#vim-airline-doesnt-appear-until-i-create-a-new-split
+" for statusbar to appear
+" " https://github.com/bling/vim-airline/wiki/FAQ#vim-airline-doesnt-appear-until-i-create-a-new-split
 set laststatus=2
 
 set wildignore+=*/vendor/*
