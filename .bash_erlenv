@@ -1,3 +1,0 @@
-export PATH="$HOME/.erlenv/bin:$PATH"
-
-source "$HOME/.erlenv/completions/erlenv.bash"

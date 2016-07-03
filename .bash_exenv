@@ -1,3 +1,0 @@
-export PATH="$HOME/.exenv/bin:$PATH"
-
-source "$HOME/.exenv/completions/exenv.bash"
