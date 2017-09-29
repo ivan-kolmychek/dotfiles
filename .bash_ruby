@@ -1,0 +1,6 @@
+#!/bin/env bash
+
+export JRUBY_OPTS='--dev'
+
+export PATH
+PATH="${PATH}:$(ruby -rubygems -e "puts Gem.user_dir")/bin"
