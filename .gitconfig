@@ -21,3 +21,5 @@
 
 [init]
   templatedir = ~/.git_template
+[merge]
+	tool = meld
