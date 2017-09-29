@@ -15,5 +15,5 @@ export WINEARCH=win32
 
 
 source '/usr/share/git/completion/git-prompt.sh'
-PS1="[\[\e[0;36m\]\u\[\e[0m\]]\[\e[0;32m\]"'$(__git_ps1 " (%s)")'"\[\e[0m\] \[\e[0;94m\]\w\[\e[0m\] 
+PS1="[\[\e[0;36m\]\u\[\e[0m\]]\[\e[0;32m\]"'$(__git_ps1 " (%s)")'"\[\e[0m\] \[\e[0;94m\]\w\[\e[0m\]
 $ "
