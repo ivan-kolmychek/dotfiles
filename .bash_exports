@@ -5,7 +5,6 @@ export SSH_ASKPASS=/usr/bin/ksshaskpass
 export BROWSER=/usr/bin/firefox
 export HISTCONTROL='ignoreboth'
 export GIT_PS1_SHOWDIRTYSTATE=1
-export JRUBY_OPTS='--dev'
 
 # https://wiki.archlinux.org/index.php/Wine#WINEPREFIX
 export WINEPREFIX32=~/media/wine32
