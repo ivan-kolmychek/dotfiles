@@ -89,6 +89,9 @@ let g:airline_section_y = ""
 " map CtrlP clear cache
 map <c-I> :CtrlPClearCache <CR>
 
+" use Rubocop for syntastic
+let g:syntastic_ruby_checkers          = ['rubocop', 'mri']
+
 " identation and tabs handling
 " based on http://stackoverflow.com/a/1878984
 set tabstop=2       " The width of a TAB is set to N.
