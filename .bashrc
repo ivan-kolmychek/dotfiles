@@ -6,7 +6,7 @@
 # If there is a ~/.bashrc.d directory, it loads anything and everything
 #that matches ALL of following criterias:
 # - is located directly in ~/.bashrc.d (NOT in subdirectory)
-# - is a file
+# - is a file (or a symlink to a file)
 # - has filename ending with ".sh"
 #
 # Please note that it loads files in alphabetical order. So if you
@@ -17,7 +17,7 @@
 bashrc_d_path="${HOME}/.bashrc.d"
 
 if [ -d "${bashrc_d_path}" ]; then
-  results=$(find "${bashrc_d_path}/" -maxdepth 1 -name '*.sh' -type f)
+  results=$(find -L "${bashrc_d_path}/" -maxdepth 1 -name '*.sh' -type f)
   if [ -n "${results}" ]; then
     while read -r line; do
       echo "loading ${line}..."
