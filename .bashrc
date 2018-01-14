@@ -18,12 +18,14 @@ bashrc_d_path="${HOME}/.bashrc.d"
 
 if [ -d "${bashrc_d_path}" ]; then
   results=$(find "${bashrc_d_path}/" -maxdepth 1 -name '*.sh' -type f)
-  while read -r line; do
-    echo "loading ${line}..."
-    # See https://github.com/koalaman/shellcheck/wiki/SC1090
-    # shellcheck source=/dev/null
-    source "$line"
-  done <<< "$results"
+  if [ -n "${results}" ]; then
+    while read -r line; do
+      echo "loading ${line}..."
+      # See https://github.com/koalaman/shellcheck/wiki/SC1090
+      # shellcheck source=/dev/null
+      source "$line"
+    done <<< "$results"
+  fi
 else
   echo "====== WARNING ======"
   echo "No ${bashrc_d_path} found, but it was expected."
