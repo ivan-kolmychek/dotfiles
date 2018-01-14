@@ -27,3 +27,9 @@
 
 [merge]
 	tool = meld
+[diff]
+	tool = vimdiff
+[difftoo]
+	prompt = false
+[difftool]
+	prompt = false
