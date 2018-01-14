@@ -30,23 +30,8 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'spacehi.vim'
 Plugin 'cream-showinvisibles'
 
-" rbenv
-Plugin 'tpope/vim-rbenv'
-
-" rails
-Plugin 'tpope/vim-rails'
-
-" bundler
-Plugin 'tpope/vim-Bundler'
-
-" rake
-Plugin 'tpope/vim-rake'
-
 " slim templating engine
 Plugin 'slim-template/vim-slim'
-
-" api blueprint
-Plugin 'kylef/apiblueprint.vim'
 
 " elixir
 Plugin 'elixir-lang/vim-elixir'
