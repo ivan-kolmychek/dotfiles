@@ -87,3 +87,6 @@ set shiftwidth=2    " Indents will have a width of N
 set softtabstop=2   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 set copyindent
+
+" disable autoindentation for ruby
+"autocmd FileType ruby setlocal indentexpr=""
