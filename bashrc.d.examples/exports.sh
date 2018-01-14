@@ -6,12 +6,6 @@ export BROWSER=/usr/bin/firefox
 export HISTCONTROL='ignoreboth'
 export GIT_PS1_SHOWDIRTYSTATE=1
 
-# https://wiki.archlinux.org/index.php/Wine#WINEPREFIX
-export WINEPREFIX32=~/media/wine32
-export WINEPREFIX=$WINEPREFIX32
-# https://wiki.archlinux.org/index.php/Wine#WINEARCH
-export WINEARCH=win32
-
 # Fix pinentry-tty not working
 export GPG_TTY=$(tty)
 
