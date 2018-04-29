@@ -75,6 +75,8 @@ let g:airline_section_y = ""
 " map CtrlP clear cache
 map <c-I> :CtrlPClearCache <CR>
 
+let mapleader = ","
+
 " use Rubocop for syntastic
 let g:syntastic_ruby_checkers          = ['rubocop', 'mri']
 
