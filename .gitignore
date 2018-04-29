@@ -8,4 +8,5 @@
 *.orig
 
 # bundler files
-vendor/bundle/
+vendor/bundle/*
+!vendor/bundle/.keep
