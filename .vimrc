@@ -20,7 +20,7 @@ Plugin 'Bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 
 " file navigation
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " interesting themes
 Plugin 'chriskempson/vim-tomorrow-theme'
