@@ -91,5 +91,8 @@ set softtabstop=2   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 set copyindent
 
+highlight ColorColumn ctermbg=black
+set colorcolumn=80
+
 " disable autoindentation for ruby
 "autocmd FileType ruby setlocal indentexpr=""
