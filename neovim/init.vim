@@ -124,6 +124,9 @@ set mouse=a
 " Add hotkey to drop search highlight
 nnoremap <leader><space> :nohlsearch<cr>
 
+" Integrate with system clipboard
+set clipboard=unnamedplus
+
 " Show 80 chars indicator
 highlight ColorColumn ctermbg=black
 set colorcolumn=80
