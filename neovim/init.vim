@@ -121,6 +121,9 @@ set copyindent
 " Allow using mouse for navigation and selection
 set mouse=a
 
+" Add hotkey to drop search highlight
+nnoremap <leader><space> :nohlsearch<cr>
+
 " Show 80 chars indicator
 highlight ColorColumn ctermbg=black
 set colorcolumn=80
