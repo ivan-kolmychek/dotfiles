@@ -117,5 +117,10 @@ set softtabstop=2   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 set copyindent
 
+
+" Allow using mouse for navigation and selection
+set mouse=a
+
+" Show 80 chars indicator
 highlight ColorColumn ctermbg=black
 set colorcolumn=80
