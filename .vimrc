@@ -1,3 +1,7 @@
+"
+" @WARNING 2018-01-05: It is not maintained anymore
+" Check out the nvim config somewhere nearby.
+"
 set nocompatible              " be iMproved, required
 filetype off                  " required
 " set the runtime path to include Vundle and initialize
