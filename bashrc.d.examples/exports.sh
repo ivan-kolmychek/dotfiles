@@ -1,6 +1,7 @@
 #!/bin/env bash
 
-export EDITOR=/usr/bin/vim
+# @NOTE: add exports as separate files.
+# Mostly for the modularity sake.
+
 export SSH_ASKPASS=/usr/bin/ksshaskpass
-export BROWSER=/usr/bin/firefox
 export HISTCONTROL='ignoreboth'
