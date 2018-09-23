@@ -52,6 +52,9 @@ if dein#load_state('~/.cache/dein')
   " elixir
   call dein#add('elixir-lang/vim-elixir')
 
+  " graphql
+  call dein#add('jparise/vim-graphql')
+
   " trailing whitespace
   call dein#add('ntpeters/vim-better-whitespace')
 
