@@ -58,6 +58,12 @@ if dein#load_state('~/.cache/dein')
   " trailing whitespace
   call dein#add('ntpeters/vim-better-whitespace')
 
+  " vue syntax highlight
+  call dein#add('posva/vim-vue')
+
+  " pug (formerly jade) syntax highlight
+  call dein#add('digitaltoad/vim-pug')
+
   " Required:
   call dein#end()
   call dein#save_state()
