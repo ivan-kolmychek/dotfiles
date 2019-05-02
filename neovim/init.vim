@@ -64,6 +64,9 @@ if dein#load_state('~/.cache/dein')
   " pug (formerly jade) syntax highlight
   call dein#add('digitaltoad/vim-pug')
 
+  " elm syntax highlight and such
+  call dein#add('elmcast/elm-vim')
+
   " Required:
   call dein#end()
   call dein#save_state()
