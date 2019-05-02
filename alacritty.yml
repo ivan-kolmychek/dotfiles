@@ -13,6 +13,7 @@ env:
   # You can verify this by checking for the presence of `smso` and `sitm` in
   # `infocmp xterm-256color`.
   TERM: xterm-256color
+  WINIT_HIDPI_FACTOR: 1
 
 window:
   # Window dimensions in character columns and lines
@@ -31,7 +32,7 @@ window:
 
   # Window decorations
   # Setting this to false will result in window without borders and title bar.
-  decorations: true
+  # decorations: full
 
 # Display tabs using this many cells (changes require restart)
 tabspaces: 8
@@ -90,7 +91,7 @@ font:
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
   offset:
     x: 0
-    y: 0
+    y: 2
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increase the x offset to move the glyph to
@@ -109,7 +110,7 @@ render_timer: false
 
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.
-custom_cursor_colors: false
+#custom_cursor_colors: false
 
 # Colors (Tomorrow Night Bright)
 colors:
@@ -220,14 +221,15 @@ mouse:
   # scrolling for applications like `man`.
   #
   # To disable this completely, set `faux_scrollback_lines` to 0.
-  faux_scrollback_lines: 1
+  faux_scrolling_lines: 1
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
 
 dynamic_title: true
 
-hide_cursor_when_typing: false
+#hide_cursor_when_typing: false
+mouse.hide_when_typing: false
 
 # Style of the cursor
 #
@@ -235,7 +237,8 @@ hide_cursor_when_typing: false
 # - Block
 # - Underline
 # - Beam
-cursor_style: Block
+#cursor_style: Block
+cursor.style: Block
 
 # Live config reload (changes require restart)
 live_config_reload: true
