@@ -16,6 +16,7 @@
   wip = commit -m "wip"
   fixup = commit -m "fixup"
   ctags = !.git/hooks/ctags
+  staged = diff --cached
 
 [push]
   default = simple
@@ -27,7 +28,7 @@
   ff = only
 
 [merge]
-	tool = meld
+	tool =meld
 [diff]
 	tool = vimdiff
 [difftoo]
@@ -35,7 +36,13 @@
 [difftool]
 	prompt = false
 [commit]
-	gpgsign = true
+  gpgsign = true
+
+[status]
+  showUntrackedFiles = all
+  short = true
+  branch = true
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
