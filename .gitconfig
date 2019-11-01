@@ -1,14 +1,18 @@
 [user]
   name = Ivan Kolmychek
   email = ivan.kolmychek@gmail.com
-  signkey = 34C271A03608D72AF972B9492EDD2424478C7035
+  signkey = CB0062FF41CAF94EECB15BCE689B97DD51F50A1D
 
 [core]
 	autocrlf = input
 	safecrlf = warn
 	editor = nvim
 	excludesfile = ~/.gitignore
-	pager = less -S
+  pager = less -S
+
+[pager]
+#  diff = false
+  branch = false
 
 [alias]
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
@@ -48,3 +52,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[gpg]
+	program = gpg
