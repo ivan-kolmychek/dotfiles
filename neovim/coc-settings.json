@@ -6,7 +6,8 @@
     "typescriptreact",
     "javascript",
     "javascriptreact",
-    "elixir"
+    "elixir",
+    "rust"
   ],
   // "prettier.printWidth": 80,
   // "prettier.tabWidth": 2,
