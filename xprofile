@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # screen locking facility
-xss-lock --transfer-sleep-lock -- lock-session &
+xss-lock --transfer-sleep-lock -- /opt/ivanko/bin/lock-session &
