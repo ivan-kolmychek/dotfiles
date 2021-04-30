@@ -21,6 +21,9 @@ if dein#load_state('~/.local/share/dein')
   " You can specify revision/branch/tag.
   "call dein#add('Shougo/deol.nvim', { 'rev': 'a1b5108fd' })
 
+  " UI for updating
+  call dein#add('wsdjeg/dein-ui.vim')
+
   " Global-ish tools
   " -------------------------
 
@@ -82,6 +85,9 @@ if dein#load_state('~/.local/share/dein')
 
   " gleam
   call dein#add('gleam-lang/gleam.vim')
+
+  " rusty object notation
+  call dein#add('ron-rs/ron.vim')
 
   " Required:
   " -------------------------
@@ -313,6 +319,9 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " --- End of config suggested by CoC
+
+" Using CocAction
+nnoremap <space>q :CocAction<cr>
 
 " --- Rest
 

@@ -7,8 +7,18 @@
     "javascript",
     "javascriptreact",
     "elixir",
+    "ruby",
     "rust"
   ],
+  // -
+  // solargraph
+  // -
+  "solargraph.useBundler": true,
+  "solargraph.formatting": true,
+  "solargraph.diagnostics": true,
+  // -
+  // prettier
+  // -
   // "prettier.printWidth": 80,
   // "prettier.tabWidth": 2,
   // "prettier.singleQuote": false,
@@ -16,6 +26,9 @@
   // "prettier.arrowParens": "always",
   // "prettier.bracketSpacing": true,
   // "prettier.semi": true,
+  // -
+  // LS overrides
+  // -
   "languageserver": {
   }
 }
