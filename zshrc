@@ -10,7 +10,7 @@ bindkey -e
 zshrc_d_path="${HOME}/.zshrc.d"
 
 if [ -d "${zshrc_d_path}" ]; then
-  results=$(find -L "${zshrc_d_path}/" -maxdepth 1 -name '*.zsh' -type f)
+  results=$(find -L "${zshrc_d_path}/" -maxdepth 1 -name '*.zsh' -type f | sort)
   files_to_load=()
   if [ -n "${results}" ]; then
     while read -r line; do
