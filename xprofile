@@ -2,3 +2,6 @@
 
 # screen locking facility
 xss-lock --transfer-sleep-lock -- /opt/ivanko/bin/lock-session &
+
+# compose key
+setxkbmap -option compose:ralt
