@@ -263,12 +263,12 @@ highlight NormalFloat ctermbg=Black ctermfg=White
 
 " change highlights for warnings
 highlight CocWarningSign ctermbg=Yellow ctermfg=Black
-" highlight CocWarningFloat ctermbg=Black ctermfg=Yellow
+highlight CocWarningFloat ctermbg=Black ctermfg=Yellow
 highlight CocWarningHighlight ctermfg=Yellow cterm=underline
 
 " change highlights for errors
 highlight CocErrorSign ctermbg=Red ctermfg=Black
-" highlight CocErrorFloat ctermbg=Black ctermfg=Red
+highlight CocErrorFloat ctermbg=Black ctermfg=LightRed
 highlight CocErrorHighlight ctermfg=Red cterm=underline
 
 " Remap for rename current word
