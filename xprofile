@@ -1,7 +1,13 @@
 #!/bin/bash
 
 # screen locking facility
-xss-lock --transfer-sleep-lock -- /opt/ivanko/bin/lock-session &
+which xss-lock &>/dev/null && \
+  xss-lock --transfer-sleep-lock -- /opt/ivanko/bin/lock-session &
 
 # compose key
-setxkbmap -option compose:ralt
+which setxkbmap &> /dev/null && \
+  setxkbmap -option compose:ralt &
+
+# network manager applet
+which nm-applet &> /dev/null && \
+  nm-applet &
