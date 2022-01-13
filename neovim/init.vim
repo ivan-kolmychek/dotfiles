@@ -14,15 +14,15 @@ if dein#load_state('~/.local/share/dein')
   " Required:
   call dein#add('~/.local/share/dein/repos/github.com/Shougo/dein.vim')
 
+  " UI for dein, just a nice-to-have
+  call dein#add('wsdjeg/dein-ui.vim')
+
   " Add or remove your plugins here:
   "call dein#add('Shougo/neosnippet.vim')
   "call dein#add('Shougo/neosnippet-snippets')
 
   " You can specify revision/branch/tag.
   "call dein#add('Shougo/deol.nvim', { 'rev': 'a1b5108fd' })
-
-  " UI for updating
-  call dein#add('wsdjeg/dein-ui.vim')
 
   " Global-ish tools
   " -------------------------
@@ -44,6 +44,31 @@ if dein#load_state('~/.local/share/dein')
   " git wrapper
   " it also configures vim to look for ctags in .git/tags
   call dein#add('tpope/vim-fugitive')
+
+  " git marks on sidebar
+  call dein#add('airblade/vim-gitgutter')
+
+  " task runner
+  call dein#add('skywind3000/asynctasks.vim')
+  call dein#add('skywind3000/asyncrun.vim')
+
+  " bookmarks
+  call dein#add('MattesGroeger/vim-bookmarks')
+
+  " terminal (floating/advanced/etc)
+  call dein#add('akinsho/toggleterm.nvim')
+
+  " Telescope and related stuff
+  " -------------------------
+  " NOTE: has optional dependencies:
+  " - ripgrep
+  " - fd
+  " -------------------------
+
+  call dein#add('nvim-lua/plenary.nvim')
+  call dein#add('nvim-telescope/telescope.nvim')
+
+  call dein#add('nvim-treesitter/nvim-treesitter', {'hook_post_update': 'TSUpdate'})
 
   " Conqueror of Completion + addons
   " -------------------------
@@ -191,6 +216,40 @@ nnoremap <silent> <C-l> :call fzf#vim#buffers(0)<CR>
 " Make sure fzf uses ag and respects gitignore
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
+" --- Asyncrun and Asynctask config
+
+" make asyncrun open quickfix window
+let g:asyncrun_open = 0
+
+let g:asynctasks_extra_config = [
+    \ '~/.config/nvim/tasks.ini',
+    \ ]
+
+function! s:toggleterm_runner(opts)
+lua << EOF
+  local opts = vim.fn.eval("a:opts");
+  local Terminal = require("toggleterm.terminal").Terminal
+  local term = Terminal:new({
+    cmd = "echo " .. opts.cmd .. ";" .. opts.cmd,
+    dir = opts.cwd,
+    direction = "float",
+    hidden = false,
+    close_on_exit = false,
+    on_open = function(t)
+      vim.cmd("startinsert!");
+    end
+  });
+  term:toggle();
+EOF
+endfunction
+
+let g:asyncrun_runner = get(g:, 'asyncrun_runner', {})
+let g:asyncrun_runner.toggleterm_custom = function('s:toggleterm_runner')
+
+let g:asynctasks_term_pos = "toggleterm_custom"
+
+" --- end of asyncrun/asynctask config
+
 " --- Cofig suggested by CoC:
 
 " Some servers have issues with backup files, see #649
@@ -278,6 +337,17 @@ nmap <leader>rn <Plug>(coc-rename)
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
+" Applying codeAction to the selected region.
+" Example: `<leader>aap` for current paragraph
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" Remap keys for applying codeAction to the current buffer.
+nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <silent><space>q  <Plug>(coc-codeaction)
+" Apply AutoFix to problem on the current line.
+nmap <leader>qf  <Plug>(coc-fix-current)
+
 " Create mappings for function text object, requires document symbols feature of languageserver.
 xmap if <Plug>(coc-funcobj-i)
 xmap af <Plug>(coc-funcobj-a)
@@ -320,9 +390,8 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " --- End of config suggested by CoC
 
-" Using CocAction
-nnoremap <space>q :CocAction<cr>
-
 " --- Rest
 
 command! -nargs=0 CocFormat :call CocAction('format')
+
+nmap <silent> <space>t :CocList tasks<CR>
