@@ -1,13 +1,10 @@
 #!/bin/env zsh
 
-git_prompt() {
- ref=$(git symbolic-ref HEAD | cut -d'/' -f3)
- echo $ref
-}
-
 source '/usr/share/git/completion/git-prompt.sh'
 
 export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+export GIT_PS1_SHOWUPSTREAM="auto"
 
 setopt prompt_subst
 
