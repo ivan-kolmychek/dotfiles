@@ -421,3 +421,5 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 command! -nargs=0 CocFormat :call CocAction('format')
 
 nmap <silent> <space>t :CocList tasks<CR>
+
+nmap <silent><space>q  <Plug>(coc-codeaction)
