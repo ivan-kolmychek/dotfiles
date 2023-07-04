@@ -1,15 +1,27 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
-    "css",
-    "Markdown",
-    "typescript",
-    "typescriptreact",
-    "javascript",
-    "javascriptreact",
-    "elixir",
-    "ruby",
-    "rust"
+  "workspace.ignoredFolders": [
+    "$HOME",
+    "$HOME/.cargo/**",
+    "$HOME/.rustup/**"
   ],
+  "[rust]": {
+    "coc.preferences.formatOnSave": true
+  },
+  "[typescript][typescriptreact][javascript][javascriptreact]": {
+    "coc.preferences.formatOnSave": true
+  },
+  "[css][Markdown]": {
+    "coc.preferences.formatOnSave": true
+  },
+  "[elixir]": {
+    "coc.preferences.formatOnSave": true
+  },
+  "[ruby]": {
+    "coc.preferences.formatOnSave": true
+  },
+  "[css]": {
+    "coc.preferences.formatOnSave": true
+  },
   // -
   // solargraph
   // -
