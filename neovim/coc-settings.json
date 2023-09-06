@@ -4,6 +4,13 @@
     "$HOME/.cargo/**",
     "$HOME/.rustup/**"
   ],
+  "notification.statusLineProgress": false,
+  // -
+  // hints are enabled by default but require nvim >= 0.10.0
+  // however, I'd like to hide them by default
+  // -
+  "inlayHint.enable": true,
+  "inlayHint.display": false,
   "[rust]": {
     "coc.preferences.formatOnSave": true
   },
@@ -22,6 +29,14 @@
   "[css]": {
     "coc.preferences.formatOnSave": true
   },
+  // -
+  // rust-analyzer
+  // -
+  "rust-analyzer.serverPath": "ra-multiplex",
+  // "rust-analyzer.trace.server": "verbose",
+  // "rust-analyzer.inlayHints.typeHints.enable": true,
+  // "rust-analyzer.inlayHints.parameterHints.enable": true,
+  // "rust-analyzer.inlayHints.chainingHints.enable": true,
   // -
   // solargraph
   // -

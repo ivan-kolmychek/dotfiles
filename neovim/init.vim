@@ -39,7 +39,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('vim-scripts/cream-showinvisibles')
 
   " cool statusbar
-  call dein#add('Bling/vim-airline')
+  call dein#add('vim-airline/vim-airline')
 
   " git wrapper
   " it also configures vim to look for ctags in .git/tags
@@ -57,6 +57,9 @@ if dein#load_state('~/.local/share/dein')
 
   " terminal (floating/advanced/etc)
   call dein#add('akinsho/toggleterm.nvim')
+
+  " highlight color codes
+  call dein#add('chrisbra/colorizer')
 
   " Telescope and related stuff
   " -------------------------
@@ -190,6 +193,9 @@ set clipboard=unnamedplus
 
 " correctly highlight comments in jsonc
 autocmd FileType json syntax match Comment +\/\/.\+$+
+
+" change how inlay hints
+highlight CocInlayHint ctermbg=NONE ctermfg=gray
 
 " Show 80 chars indicator
 highlight ColorColumn ctermbg=black
@@ -422,4 +428,8 @@ command! -nargs=0 CocFormat :call CocAction('format')
 
 nmap <silent> <space>t :CocList tasks<CR>
 
+" use Space-Q to get code actions
 nmap <silent><space>q  <Plug>(coc-codeaction)
+
+" Use K to show documentation in preview window
+nnoremap <silent><space>h :CocCommand document.toggleInlayHint<CR>
