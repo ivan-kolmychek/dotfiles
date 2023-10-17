@@ -21,6 +21,8 @@
   fixup = commit -m "fixup"
   ctags = !.git/hooks/ctags
   staged = diff --cached
+  master = checkout master
+  main = checkout main
 
 [push]
   default = simple
