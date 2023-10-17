@@ -1,7 +1,7 @@
 [user]
   name = Ivan Kolmychek
   email = ivan.kolmychek@gmail.com
-  signkey = C1698A16AB3FA9D23F2119A11E6B1623323B3EBE
+  signkey = A05FE47B2DDDD8EF7E0886E84E32AADEA6A01077
 
 [core]
 	autocrlf = input

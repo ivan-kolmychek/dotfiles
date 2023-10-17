@@ -1,0 +1,4 @@
+[include]
+  path = ~/src/dotfiles/gitconfig-common
+[user]
+  signkey = A05FE47B2DDDD8EF7E0886E84E32AADEA6A01077
