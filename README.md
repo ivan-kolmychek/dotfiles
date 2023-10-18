@@ -4,6 +4,8 @@ various configuration files
 
 # bashrc
 
-# vimrc - Vim configuration
+# gnupg
 
-Requires `vundle`
+```
+ln -vs $(pwd)/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+```
