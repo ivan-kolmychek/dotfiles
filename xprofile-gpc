@@ -1,0 +1,23 @@
+#!/bin/env zsh
+
+# scale for 1920x1080 @ 15.6 (~141 dpi)
+# in fact 1.47 would be more accurate but 1.3 feels nicer
+export GDK_DPI_SCALE=1.30
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_ENABLE_HIGHDPI_SCALING=1
+
+# screen (auto)locking
+which xss-lock &>/dev/null && \
+  xss-lock --transfer-sleep-lock -- /opt/ivanko/bin/lock-session &
+
+# compose key
+which setxkbmap &> /dev/null && \
+  setxkbmap -option compose:ralt &
+
+# pre-launch 1password
+which 1password &> /dev/null && \
+  1password --silent &
+
+# network manager applet for tray
+which nm-applet &> /dev/null && \
+  nm-applet &
