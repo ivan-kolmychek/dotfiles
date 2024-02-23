@@ -157,8 +157,32 @@ set laststatus=2
 " 256-colors
 set t_Co=256
 
+" select color scheme
+" vim means old-style vim theme before neovim 0.10
+colorscheme vim
+
 " force dark background
 set background=dark
+
+"
+" change highlight groups
+"
+" For colors see https://neovim.io/doc/user/syntax.html#gui-colors or :help
+" gui-colors
+"
+" Suggested color names (these are available on most systems):
+"     Red      LightRed      DarkRed
+"     Green    LightGreen    DarkGreen    SeaGreen
+"     Blue     LightBlue     DarkBlue     SlateBlue
+"     Cyan     LightCyan     DarkCyan
+"     Magenta  LightMagenta  DarkMagenta
+"     Yellow   LightYellow   Brown        DarkYellow
+"     Gray     LightGray     DarkGray
+"     Black    White
+"     Orange   Purple        Violet
+
+" disable using gui colors in console whenever supported
+set notermguicolors
 
 " line numbers
 set number
@@ -214,7 +238,7 @@ autocmd FileType json syntax match Comment +\/\/.\+$+
 highlight CocInlayHint ctermbg=NONE ctermfg=gray
 
 " Show 80 chars indicator
-highlight ColorColumn ctermbg=black
+highlight ColorColumn ctermbg=black guibg=gray
 set colorcolumn=80
 
 " Required for operations modifying multiple buffers like rename.
