@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# fix plasma/dolphin apps list
+export XDG_MENU_PREFIX=plasma-
+
 # screen locking facility
 which xss-lock &>/dev/null && \
   xss-lock --transfer-sleep-lock -- /opt/ivanko/bin/lock-session &
