@@ -7,7 +7,12 @@ various configuration files
 # gnupg
 
 ```
-ln -vs $(pwd)/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+ln -vs "$(pwd)/gpg-agent.conf" ~/.gnupg/gpg-agent.conf
+```
+
+# xprofile
+```
+ln -s "$(pwd)/xprofile-$(hostname)" "${HOME}/.xprofile"
 ```
 
 # ra-multiplex
