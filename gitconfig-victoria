@@ -1,4 +1,6 @@
 [include]
   path = ~/src/dotfiles/gitconfig-common
 [user]
-  signkey = C1698A16AB3FA9D23F2119A11E6B1623323B3EBE
+  signingkey = /home/ivanko/.ssh/id_rsa.pub
+[gpg]
+  format = ssh
