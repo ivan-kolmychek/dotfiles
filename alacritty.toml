@@ -1,6 +1,4 @@
 # https://alacritty.org/config-alacritty.html
-live_config_reload = true
-
 [bell]
 animation = "EaseOutExpo"
 duration = 0
@@ -592,3 +590,6 @@ lines = 24
 [window.padding]
 x = 2
 y = 2
+
+[general]
+live_config_reload = true
