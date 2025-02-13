@@ -32,7 +32,7 @@
   // -
   // rust-analyzer
   // -
-  "rust-analyzer.serverPath": "ra-multiplex",
+  // "rust-analyzer.serverPath": "ra-multiplex",
   // "rust-analyzer.trace.server": "verbose",
   // "rust-analyzer.inlayHints.typeHints.enable": true,
   // "rust-analyzer.inlayHints.parameterHints.enable": true,
