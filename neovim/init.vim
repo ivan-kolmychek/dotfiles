@@ -30,9 +30,6 @@ if dein#load_state('~/.local/share/dein')
   " Required:
   call dein#add('~/.local/share/dein/repos/github.com/Shougo/dein.vim')
 
-  " UI for dein, just a nice-to-have
-  call dein#add('wsdjeg/dein-ui.vim')
-
   " Add or remove your plugins here:
   "call dein#add('Shougo/neosnippet.vim')
   "call dein#add('Shougo/neosnippet-snippets')
@@ -111,7 +108,7 @@ if dein#load_state('~/.local/share/dein')
   " call dein#add('slim-template/vim-slim')
 
   " elixir syntax highlight
-  call dein#add('elixir-lang/vim-elixir')
+  " call dein#add('elixir-lang/vim-elixir')
 
   " typescript syntax highlight
   call dein#add('leafgarland/typescript-vim')
@@ -125,10 +122,10 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('jparise/vim-graphql')
 
   " elm syntax highlight and such
-  call dein#add('elmcast/elm-vim')
+  " call dein#add('elmcast/elm-vim')
 
   " gleam
-  call dein#add('gleam-lang/gleam.vim')
+  " call dein#add('gleam-lang/gleam.vim')
 
   " rusty object notation
   call dein#add('ron-rs/ron.vim')
