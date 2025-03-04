@@ -18,6 +18,7 @@
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   root = !pwd
   wip = commit -m "wip"
+  save = commit -m "save"
   fixup = commit -m "fixup"
   ctags = !.git/hooks/ctags
   staged = diff --cached
