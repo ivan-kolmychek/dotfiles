@@ -1,0 +1,13 @@
+profile {
+	output eDP-1 disable
+	output HDMI-A-1 'ASUSTek COMPUTER INC VG279QM L9LMQS253133' enable
+
+	exec pkill --signal SIGUSR2 waybar
+}
+
+profile {
+	output eDP-1 enable
+
+	exec pkill --signal SIGUSR2 waybar
+}
+
