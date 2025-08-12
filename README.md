@@ -1,3 +1,5 @@
+NOTE: this repo has been moved to codeberg, see https://codeberg.org/ivan-kolmychek/dotfiles
+
 # dotfiles
 
 various configuration files
